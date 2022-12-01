@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Create pperson";
+}
+
+<form method="post" asp-controller="Person" asp-action="CreateNewPerson">
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="number" class="form-control" id="id" pleaceholder="ID" name="id" />
+        </div>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" pleaceholder="name" name="name" />
+    </div>
+
+    <div class="form-group">
+        <label for="name">City</label>
+        <input type="text" class="form-control" id="city" pleaceholder="City" name="city" />
+    </div>
+    <div class="form-group">
+        <label for="name">Gender</label>
+        <input type="number" class="form-control" id="gender" pleaceholder="Gender" name="gender" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form> 
